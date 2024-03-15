@@ -1,0 +1,31 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import logo from '../assets/nfl_logo.png'
+
+function Header() {
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
+      <Container>
+      <Navbar.Brand href="#home">
+            <img
+              src={logo}
+              width="40"
+              height="55"
+              className="d-inline-block align-top"
+              alt="NFL_Logo"
+            />
+        </Navbar.Brand>
+        <Navbar.Brand href="#home">Examen NFL</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link>De La Torre Tenorio Edilberto 4f EVND</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default Header;
